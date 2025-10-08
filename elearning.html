@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Learning</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/auth.js"></script>
+    <script src="js/elearning.js"></script>
+</head>
+<body onload="loadLearningMaterials()">
+    <nav class="navbar">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="collaboration.html">Collaboration</a>
+        <a href="elearning.html">E-Learning</a>
+        <!-- <a href="supervisor.html">Supervisor</a> -->
+        <a href="notifications.html">Notifications</a>
+        <a href="#" onclick="logoutUser()">Logout</a>
+    </nav>
+
+    <div class="container">
+        <h1>E-Learning Section</h1>
+        
+        <h2>Upload PDF Material</h2>
+        <input type="text" id="material-title" placeholder="Title">
+        <input type="file" id="material-file" accept="application/pdf">
+        <button onclick="uploadMaterial()">Upload</button>
+
+        <h2>Available Materials</h2>
+        <ul id="materials-list"></ul>
+    </div>
+</body>
+</html>

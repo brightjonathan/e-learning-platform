@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Supervisor Module</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/auth.js"></script>
+    <script src="js/supervisor.js"></script>
+</head>
+<body onload="loadDrafts()">
+    <nav class="navbar">
+        <a href="dashboard.html">Dashboard</a>
+        <!-- <a href="collaboration.html">Collaboration</a> -->
+        <!-- <a href="elearning.html">E-Learning</a> -->
+        <!-- <a href="supervisor.html">Supervisor</a> -->
+        <!-- <a href="notifications.html">Notifications</a> -->
+        <a href="#" onclick="logoutUser()">Logout</a>
+    </nav>
+
+    <div class="container">
+        <h1>Supervisor Module</h1>
+        <h2>Student Drafts</h2>
+        <ul id="drafts-list"></ul>
+        <textarea id="feedback" rows="3" style="width: 100%; height: 40vh;" placeholder="Write feedback"></textarea>
+        <button onclick="giveFeedback()">Submit Feedback</button>
+    </div>
+</body>
+</html>

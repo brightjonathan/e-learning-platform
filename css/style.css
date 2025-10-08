@@ -1,0 +1,99 @@
+/* ========== Global Reset & Base Styles ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f6fa;
+    color: #2f3640;
+}
+
+/* ========== Navbar ========== */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background: #40739e;
+    padding: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* ========== Container ========== */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* ========== Headings ========== */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ========== Forms ========== */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select,
+textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ========== Buttons ========== */
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background: #273c75;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #192a56;
+}
+
+/* ========== Collaboration Section ========== */
+.collab-section {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f0f4ff;
+    border: 1px solid #dcdde1;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.collab-section h2 {
+    margin-bottom: 15px;
+    color: #273c75;
+}
+
+.collab-section p {
+    margin-bottom: 20px;
+    color: #353b48;
+    font-size: 14px;
+}
